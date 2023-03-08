@@ -7,7 +7,7 @@
 
 | Version |                         Description                          |
 | :-----: | :----------------------------------------------------------: |
-|  1.0.3  | Added Device Info |
+|  1.0.3  | Added Device Info(Model、Version、manufacturer) |
 
 
 
@@ -16,4 +16,4 @@
 
 | Version |                         Description                          |
 | :-----: | :----------------------------------------------------------: |
-|  1.0.3  | Added Device Info  |
+|  1.0.3  |  Added Device Info(Model、Version、manufacturer)  |
