@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85EE418729717E10000E6A24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EE418629717E10000E6A24 /* AppDelegate.m */; };
+		85EE418D29717E10000E6A24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EE418C29717E10000E6A24 /* ViewController.m */; };
+		85EE419029717E10000E6A24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85EE418E29717E10000E6A24 /* Main.storyboard */; };
+		85EE419229717E13000E6A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85EE419129717E13000E6A24 /* Assets.xcassets */; };
+		85EE419529717E13000E6A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85EE419329717E13000E6A24 /* LaunchScreen.storyboard */; };
+		85EE419829717E13000E6A24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EE419729717E13000E6A24 /* main.m */; };
+		85EE41B229723BFE000E6A24 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EE41B029723BFE000E6A24 /* MainVC.m */; };
+		85EE41B329723BFE000E6A24 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85EE41B129723BFE000E6A24 /* MainVC.xib */; };
+		85EE41B729723EC2000E6A24 /* SearchDeviceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 85EE41B529723EC2000E6A24 /* SearchDeviceVC.m */; };
+		85EE41B829723EC2000E6A24 /* SearchDeviceVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85EE41B629723EC2000E6A24 /* SearchDeviceVC.xib */; };
+		85EE42B52972BA7F000E6A24 /* libChipseaCloudV3SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EE42B12972BA7F000E6A24 /* libChipseaCloudV3SDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		85EE418229717E10000E6A24 /* ChipseaCloudV3Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChipseaCloudV3Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85EE418529717E10000E6A24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85EE418629717E10000E6A24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		85EE418B29717E10000E6A24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		85EE418C29717E10000E6A24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		85EE418F29717E10000E6A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85EE419129717E13000E6A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85EE419429717E13000E6A24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85EE419629717E13000E6A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85EE419729717E13000E6A24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85EE41AF29723BFE000E6A24 /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		85EE41B029723BFE000E6A24 /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		85EE41B129723BFE000E6A24 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		85EE41B429723EC2000E6A24 /* SearchDeviceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchDeviceVC.h; sourceTree = "<group>"; };
+		85EE41B529723EC2000E6A24 /* SearchDeviceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchDeviceVC.m; sourceTree = "<group>"; };
+		85EE41B629723EC2000E6A24 /* SearchDeviceVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchDeviceVC.xib; sourceTree = "<group>"; };
+		85EE42A52972BA7F000E6A24 /* WeightProtocol_CsYunV3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightProtocol_CsYunV3.h; sourceTree = "<group>"; };
+		85EE42A62972BA7F000E6A24 /* BleDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleDefines.h; sourceTree = "<group>"; };
+		85EE42A72972BA7F000E6A24 /* WeightFrame_CsYun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightFrame_CsYun.h; sourceTree = "<group>"; };
+		85EE42A82972BA7F000E6A24 /* BtData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtData.h; sourceTree = "<group>"; };
+		85EE42A92972BA7F000E6A24 /* BleDeviceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleDeviceProtocol.h; sourceTree = "<group>"; };
+		85EE42AA2972BA7F000E6A24 /* ChipseaScaleDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChipseaScaleDetail.h; sourceTree = "<group>"; };
+		85EE42AB2972BA7F000E6A24 /* ChipseaBtUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChipseaBtUtil.h; sourceTree = "<group>"; };
+		85EE42AC2972BA7F000E6A24 /* BleDeviceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleDeviceDelegate.h; sourceTree = "<group>"; };
+		85EE42AD2972BA7F000E6A24 /* BtData_Weight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BtData_Weight.h; sourceTree = "<group>"; };
+		85EE42AE2972BA7F000E6A24 /* WeightProtocol_CsYun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightProtocol_CsYun.h; sourceTree = "<group>"; };
+		85EE42AF2972BA7F000E6A24 /* WeightFrame_CsYunV3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightFrame_CsYunV3.h; sourceTree = "<group>"; };
+		85EE42B02972BA7F000E6A24 /* ChipseaCloudV3SDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChipseaCloudV3SDK.h; sourceTree = "<group>"; };
+		85EE42B12972BA7F000E6A24 /* libChipseaCloudV3SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libChipseaCloudV3SDK.a; sourceTree = "<group>"; };
+		85EE42B22972BA7F000E6A24 /* CsCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CsCommon.h; sourceTree = "<group>"; };
+		85EE42B32972BA7F000E6A24 /* BaseProtocolWeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseProtocolWeight.h; sourceTree = "<group>"; };
+		85EE42B42972BA7F000E6A24 /* BaseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85EE417F29717E10000E6A24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85EE42B52972BA7F000E6A24 /* libChipseaCloudV3SDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85EE417929717E10000E6A24 = {
+			isa = PBXGroup;
+			children = (
+				85EE418429717E10000E6A24 /* ChipseaCloudV3Demo */,
+				85EE418329717E10000E6A24 /* Products */,
+				85EE41BB29723FEA000E6A24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		85EE418329717E10000E6A24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85EE418229717E10000E6A24 /* ChipseaCloudV3Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85EE418429717E10000E6A24 /* ChipseaCloudV3Demo */ = {
+			isa = PBXGroup;
+			children = (
+				85EE42A42972BA7F000E6A24 /* ChipseaCloudV3SDK */,
+				85EE418529717E10000E6A24 /* AppDelegate.h */,
+				85EE418629717E10000E6A24 /* AppDelegate.m */,
+				85EE419129717E13000E6A24 /* Assets.xcassets */,
+				85EE419629717E13000E6A24 /* Info.plist */,
+				85EE419329717E13000E6A24 /* LaunchScreen.storyboard */,
+				85EE419729717E13000E6A24 /* main.m */,
+				85EE418E29717E10000E6A24 /* Main.storyboard */,
+				85EE41AF29723BFE000E6A24 /* MainVC.h */,
+				85EE41B029723BFE000E6A24 /* MainVC.m */,
+				85EE41B129723BFE000E6A24 /* MainVC.xib */,
+				85EE41B429723EC2000E6A24 /* SearchDeviceVC.h */,
+				85EE41B529723EC2000E6A24 /* SearchDeviceVC.m */,
+				85EE41B629723EC2000E6A24 /* SearchDeviceVC.xib */,
+				85EE418B29717E10000E6A24 /* ViewController.h */,
+				85EE418C29717E10000E6A24 /* ViewController.m */,
+			);
+			path = ChipseaCloudV3Demo;
+			sourceTree = "<group>";
+		};
+		85EE41BB29723FEA000E6A24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85EE42A42972BA7F000E6A24 /* ChipseaCloudV3SDK */ = {
+			isa = PBXGroup;
+			children = (
+				85EE42A52972BA7F000E6A24 /* WeightProtocol_CsYunV3.h */,
+				85EE42A62972BA7F000E6A24 /* BleDefines.h */,
+				85EE42A72972BA7F000E6A24 /* WeightFrame_CsYun.h */,
+				85EE42A82972BA7F000E6A24 /* BtData.h */,
+				85EE42A92972BA7F000E6A24 /* BleDeviceProtocol.h */,
+				85EE42AA2972BA7F000E6A24 /* ChipseaScaleDetail.h */,
+				85EE42AB2972BA7F000E6A24 /* ChipseaBtUtil.h */,
+				85EE42AC2972BA7F000E6A24 /* BleDeviceDelegate.h */,
+				85EE42AD2972BA7F000E6A24 /* BtData_Weight.h */,
+				85EE42AE2972BA7F000E6A24 /* WeightProtocol_CsYun.h */,
+				85EE42AF2972BA7F000E6A24 /* WeightFrame_CsYunV3.h */,
+				85EE42B02972BA7F000E6A24 /* ChipseaCloudV3SDK.h */,
+				85EE42B12972BA7F000E6A24 /* libChipseaCloudV3SDK.a */,
+				85EE42B22972BA7F000E6A24 /* CsCommon.h */,
+				85EE42B32972BA7F000E6A24 /* BaseProtocolWeight.h */,
+				85EE42B42972BA7F000E6A24 /* BaseProtocol.h */,
+			);
+			path = ChipseaCloudV3SDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85EE418129717E10000E6A24 /* ChipseaCloudV3Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85EE419B29717E13000E6A24 /* Build configuration list for PBXNativeTarget "ChipseaCloudV3Demo" */;
+			buildPhases = (
+				85EE417E29717E10000E6A24 /* Sources */,
+				85EE417F29717E10000E6A24 /* Frameworks */,
+				85EE418029717E10000E6A24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChipseaCloudV3Demo;
+			productName = ChipseaCloudV3Demo;
+			productReference = 85EE418229717E10000E6A24 /* ChipseaCloudV3Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85EE417A29717E10000E6A24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					85EE418129717E10000E6A24 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 85EE417D29717E10000E6A24 /* Build configuration list for PBXProject "ChipseaCloudV3Demo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85EE417929717E10000E6A24;
+			productRefGroup = 85EE418329717E10000E6A24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85EE418129717E10000E6A24 /* ChipseaCloudV3Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85EE418029717E10000E6A24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85EE419529717E13000E6A24 /* LaunchScreen.storyboard in Resources */,
+				85EE41B329723BFE000E6A24 /* MainVC.xib in Resources */,
+				85EE419229717E13000E6A24 /* Assets.xcassets in Resources */,
+				85EE419029717E10000E6A24 /* Main.storyboard in Resources */,
+				85EE41B829723EC2000E6A24 /* SearchDeviceVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85EE417E29717E10000E6A24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85EE41B729723EC2000E6A24 /* SearchDeviceVC.m in Sources */,
+				85EE418D29717E10000E6A24 /* ViewController.m in Sources */,
+				85EE41B229723BFE000E6A24 /* MainVC.m in Sources */,
+				85EE418729717E10000E6A24 /* AppDelegate.m in Sources */,
+				85EE419829717E13000E6A24 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		85EE418E29717E10000E6A24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85EE418F29717E10000E6A24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85EE419329717E13000E6A24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85EE419429717E13000E6A24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85EE419929717E13000E6A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85EE419A29717E13000E6A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85EE419C29717E13000E6A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8MY84DGH66;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChipseaCloudV3Demo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChipseaCloudV3Demo/ChipseaCloudV3SDK",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chipsea.btWeigh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		85EE419D29717E13000E6A24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8MY84DGH66;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChipseaCloudV3Demo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChipseaCloudV3Demo/ChipseaCloudV3SDK",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chipsea.btWeigh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85EE417D29717E10000E6A24 /* Build configuration list for PBXProject "ChipseaCloudV3Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85EE419929717E13000E6A24 /* Debug */,
+				85EE419A29717E13000E6A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85EE419B29717E13000E6A24 /* Build configuration list for PBXNativeTarget "ChipseaCloudV3Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85EE419C29717E13000E6A24 /* Debug */,
+				85EE419D29717E13000E6A24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85EE417A29717E10000E6A24 /* Project object */;
+}
