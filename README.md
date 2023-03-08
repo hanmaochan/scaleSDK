@@ -1,5 +1,5 @@
 
-# scale SDK and Demo 
+# Ble scale SDK and Demo 
 
 
 
