@@ -1,12 +1,12 @@
-##Overview
+## Overview
 This document provides detailed specifications for the [ChipseaCloudV3SDK Android]. This SDK provides the [Function Introduction] function, supporting [Operating System and Language Environment], etc.
 
-##System requirements
+## System requirements
 Development tool: Android Studio
 Integration method: manually importing SDK
 Android version support: minSdkVersion 18
 
-##Usage Guidelines
+## Usage Guidelines
 1. Import SDK related files.
 After downloading the SDK, extract the sample code
 Add /app/libs/cloud_v3_lib.jar to the project
