@@ -1,0 +1,112 @@
+
+## 概述
+本文档提供了 [ChipseaCloudV3SDK 安卓] 的详细规格说明。该 SDK 提供了 [功能简介] 功能，支持 [操作系统和语言环境] 等。
+
+
+## 系统要求
+开发工具：Android Studio
+集成方式：手动导入SDK
+安卓版本支持：minSdkVersion 18
+
+
+## 使用指南
+
+1、引入SDK相关文件。
+下载sdk后，解压得到示例代码
+将/app/libs/cloud_v3_lib.jar的文件添加到到工程中即可
+
+
+2、接口调用说明
+
+```
+1.BIAWorkerFactory：
+1).调用BIAWorkerFactory.createWorker(context)----》》》创建BIAWorker类；
+
+2.BIAWorker：
+1).BIAWorker.start(mac?=null, userInfoJsonObject, byte[] broadcastData?=null, BIACallback);---》》》开始测量函数。
+   参数说明：mac:当前设备mac地址，可传空，SDK会根据协议自动匹配。
+          userInfoJsonObject:当前用户信息，JsonObject类型。
+          broadcastData:搜索设备时，获得的广播byte数组，可传空。
+          BIACallback:回调接口
+2).BIAWorker.stop()---》》》停止测量函数/停止绑定设备函数。
+3).BIAWorker.getAddress()---》》》获得正在测量的设备mac地址函数。
+4).BIAWorker.getRSSI()---》》》获得正在测量的设备RSSI值函数。
+5).BIAWorker.getState()---》》》获得当前的工作状态函数。
+    返回值说明：0  初始创建和调用stop()后，worker的状态变为IDLE.
+    1调用start()后，worker状态变为DOING.
+    2当全部测量完成后，worker状态变为DONE.
+6).BIAWorker.getversionCode()---》》》获取sdk版本号。
+7).BIAWorker.bindDevice(BIACallback);绑定设备函数
+        
+3.  BIACallback:
+    1).onResult(int type,WeightEntity data)---》》》返回测量结果函数。
+    返回值说明：type  0 不稳定的结果（过程数据）。
+                    1 稳定的结果（锁定数据）。
+                    Data  体测数据，WeightEntity类型。
+    2).onDeviceInfo(String name,String mac, String manufacturer, String model, String version)---》》》返回绑定时搜索到的设备广播名,mac,制造商,型号和版本号函数。
+    3).onState(int state,String msg)---》》》返回当前worker的工作状态。
+        返回值说明：
+        state  0 ---msg   蓝牙未打开
+               1 ---msg   定位权限未打开
+               2 ---msg   上报数据
+               3 ---msg   下发数
+               4 ---msg   正在测体重
+               5 ---msg   正在测脂
+               7 ---msg   蓝牙已关闭
+               8 ---msg   蓝牙已打开
+               9 ---msg   搜索设备
+               10 ---msg  发现gatt服务
+               11 ---msg  gatt连接已关闭
+               12 ---msg  正在连接
+               13 ---msg  已连接
+               14 ---msg  等待连接
+               15 ---msg  计算中
+               16 ---msg  等待称重
+               17 ---msg  定位状态已改变
+               18 ---msg  测量完成
+               19 ---msg  搜索超时
+               20 ---msg  mac地址不匹配
+               21 ---msg  包名不合法
+
+
+4.userInfo 数据属性定义格式：
+
+“height” //Int * 用户身高
+“sex”//Int * 用户性别  1==男，0==女
+“age”//Int * 用户年龄
+
+
+5.测量结果数据WeightEntity数据属性定义格式：
+
+“weight”
+“scaleWeight”//称上显示的体重数据
+“score”//身体评分
+“bmi”
+“axunge”
+“muscleWeight”
+“viscera”
+“bodyLeve”//身体类型
+“metabolism”
+“water”
+“bone”
+“protein”
+“thinWeight”
+“body_age”
+“weight_time”//测量时间
+```
+
+
+具体可看Demo.
+
+
+## version history
+
+| Version |                         Description                          |
+| :-----: | :----------------------------------------------------------: |
+| 1.0.3 | add model、version、manufacturer information|
+
+
+
+
+
+
