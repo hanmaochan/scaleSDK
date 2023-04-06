@@ -1,118 +1,105 @@
+# ##Overview
+This document provides detailed specifications for the [ChipseaCloudV3SDK iOS]. This SDK provides the [Function Introduction] function, supporting [Operating System and Language Environment], etc.
 
-## 概述
-本文档提供了 [ChipseaCloudV3SDK iOS] 的详细规格说明。该 SDK 提供了 [功能简介] 功能，支持 [操作系统和语言环境] 等。
+##System requirements
+Development tool: Xcode
+Integration method: manually importing SDK
+SDK version support: SDK supports Xcode 9.1.0, iOS8.0+and above versions
 
-
-## 系统要求
-开发工具：Xcode
-集成方式：手动导入SDK
-SDK版本支持：SDK支持Xcode 9.1.0, iOS8.0+及以上版本
-
-## 使用指南
-
-1、引入SDK相关文件。
-下载sdk后，解压得到示例代码
-将ChipseaCloudV3SDK的文件添加到到工程中即可
-
-
-2、在主要界面引入ChipseaCloudV3SDK.h
+##Usage Guidelines
+1. Import SDK related files.
+After downloading the SDK, extract the sample code
+Add the files of ChipseaCloudV3SDK to the project
+2. Introducing ChipseaCloudV3SDK. h in the main interface
 
 ```
 #import "ChipseaCloudV3SDK.h"
 ```
-3、初始化蓝牙库和算法库
+3. Initialize Bluetooth library and algorithm library
+
 
 ```
 ChipseaBtUtil * btUtil  =[ChipseaBtUtil getInstance];
 btUtil.delegate = self;
-   btUtil.stopAdvertisementState = NO;
-    
+btUtil.stopAdvertisementState = NO;
 ChipseaScaleDetail * scaleDetail = [ChipseaScaleDetail getInstance];
 ```
 
-4、实现相关代理方法，代理方法内具体内容可根据实际逻辑需要修改
-主要要实现的代理方法有：
-4.1 广播数据解析后的回调
+4. Implement relevant proxy methods, and the specific content within the proxy method can be modified according to actual logical needs
+The main proxy methods to be implemented are:
+4.1 Callback after parsing broadcast data
+
 
 ```
 -(void)currentBroadcastPeripheral:(CBPeripheral *)peripheral btData:(BtData *)device;
 ```
 
-在本方法中可实现判断搜索到的广播信号是否是你想要连接的，如果是则调用连接方法。
-
-
-4.2已经连接，连接成功回调
+In this method, it is possible to determine whether the searched broadcast signal is the one you want to connect to, and if so, call the connection method.
+4.2 Connected, successful connection callback
 
 ```
 -(void)connectedPeripheral:(CBPeripheral *)peripheral;
 ```
-
-4.3透传数据解析后的回调
+4.3 Callback after parsing transparent data
 
 ```
 -(void)afterConnectBtData:(BtData *)device;
-
 ```
-在本方法中实现收到透传数据后的逻辑处理
-根据过程数据、实时数据，分别实现相关逻辑。
+Implement logical processing after receiving transparent data in this method
+Implement relevant logic based on process data and real-time data.
 
-4.4蓝牙连接断开回调
+
+4.4 Bluetooth connection disconnection callback
 
 ```
 -(void)didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error;
 ```
-当蓝牙断开连接，会回调本方法
-
-
-4.5发生蓝牙状态变化时候的回调
+When Bluetooth is disconnected, this method will be called back
+4.5 Callback when Bluetooth status changes
 
 ```
 -(void)didUpdateCsScaleState:(CsScaleState)state;
 ```
-在本方法中返回的蓝牙状态的变化
+Changes in Bluetooth status returned in this method
 
-4.6返回错误回调
+
+4.6 Return Error Callback
 
 ```
 -(void)chipseaBtUtilErrorType:(ChipseaErrorType)errorType;
 ```
-在本方法中返回错误，包括BundleID 不匹配，Mac地址不匹配。
+Errors were returned in this method, including BundleID mismatch and Mac address mismatch.
 
 
-5、在绑定搜索蓝牙设备时，设置搜索参数
+5. Set search parameters when binding to search for Bluetooth devices
+
 
 ```
 [ChipseaBtUtil setCurBtDeviceType: BtDeviceType_Weight macAddress:nil isBounding:YES];
 ```
-在连接搜索蓝牙设备时，设置搜索参数
+Set search parameters when connecting to search for Bluetooth devices
 
 ```
-// mac  指定的Mac地址
+//Mac address specified by Mac
 [ChipseaBtUtil setCurBtDeviceType: BtDeviceType_Weight macAddress:mac isBounding:NO];
 
 /**
- 已经连接，连接成功
- Already connected, the connection is successful
- 接続済み、接続成功
- */
+Connected, successfully connected
+Already connected, the connection is successful
+Successful acquisition of suitable economic resources
+*/
 -(void)connectedPeripheral:(CBPeripheral *)peripheral
 {
-    NSLog(@"接続済み、接続成功");
+    NSLog (@ "Connected to appropriate economy, successfully connected to appropriate");
 }
-
+```
+6. Algorithm call related: height (cm), weight (kg), gender (male female 0), age, resistance
 
 ```
-
-
-6、算法调用相关：身高( cm)  、 体重(kg)  、 性别(男-1 女-0) 、 年龄 、 电阻
+[ChipseaScaleDetail setUserInfo_height: Height weight: Weight sex: Gender age: Age resistance: Resistance];
 
 ```
-[ChipseaScaleDetail setUserInfo_height:身高 weight:体重 sex:性别 age:年龄 resistance:电阻];
 ```
-
-```
-
-
 /**
  透传数据解析后的回调
  The callback after the transparent data is parsed
@@ -171,17 +158,9 @@ ChipseaScaleDetail * scaleDetail = [ChipseaScaleDetail getInstance];
     
 }
 ```
-
-具体可看Demo.
-
-
-
-
+Please refer to Demo for details
 ## version history
-
 | Version |                         Description                          |
 | :-----: | :----------------------------------------------------------: |
 | 1.0.3 | add model、version、manufacturer information|
-
-
 
