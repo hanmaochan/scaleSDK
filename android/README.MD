@@ -102,9 +102,15 @@ Return value description:
 Please refer to Demo for details
 
 
+## How to update
+1.rename *.jar to the same name
+2.replace the *.jar with new *.jar
+
+
 ## version history
 | Version |                         Description                          |
 | :-----: | :----------------------------------------------------------: |
+|  1.0.4  | Added new Device Protocol |
 | 1.0.3 | add model、version、manufacturer information|
 
 
