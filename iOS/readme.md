@@ -159,8 +159,15 @@ Successful acquisition of suitable economic resources
 }
 ```
 Please refer to Demo for details
+
+## How to update
+1.unzip *zip
+2.replace the old libChipseaCloudV3SDK.a with new libChipseaCloudV3SDK.a
+
+
 ## version history
 | Version |                         Description                          |
 | :-----: | :----------------------------------------------------------: |
+|  1.0.4  | Added new Device Protocol |
 | 1.0.3 | add model、version、manufacturer information|
 
