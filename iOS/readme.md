@@ -162,6 +162,7 @@ Please refer to Demo for details
 
 ## How to update
 1.unzip *zip
+
 2.replace the old libChipseaCloudV3SDK.a with new libChipseaCloudV3SDK.a
 
 
