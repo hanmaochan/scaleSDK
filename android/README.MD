@@ -104,6 +104,7 @@ Please refer to Demo for details
 
 ## How to update
 1.rename *.jar to the same name
+
 2.replace the *.jar with new *.jar
 
 
